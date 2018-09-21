@@ -5476,37 +5476,53 @@ dd.product-price--retail {
   background-color: white;
   z-index: 1001;
   border-top: 1px solid #dedede;
-  height: 40px;
+  height: 50px;
 }
-.edit-mode-panel__toggle {
-  display: inline-block;
-  width: 70px;
+.edin-in-cloud-button {
+    max-height: 50px
+}
+.edit-mode-panel .toggle {
+    flex-grow: 1;
+}
+.toggle {
+  display: flex;
+  justify-content: left;
+  width: auto;
   height: 100%;
+  padding-top: 6px
 }
-.edit-mode-panel__caption {
-  display: inline-block;
-  height: 100%;
-}
-.edit-mode-panel__title {
+.toggle__switch {
   position: relative;
-  top: 5px;
-  color: #588623;
-}
-.edit-mode-panel__navigate-link {
-  padding: 8px 16px 0px 0px;
-}
-.edit-mode-panel .switch {
-  position: relative;
-  display: inline-block;
+  display: block;
+  margin-right: 18px;
   width: 52px;
   height: 18px;
   top: 10px;
   left: 6px;
 }
-.edit-mode-panel .switch input {
+.toggle__switch input {
+    display: none;
+}
+.toggle__title {
+  position: relative;
+  top: 5px;
+  color: #588623;
+}
+.footer-caption {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.footer-navigate-link {
+  flex-grow: 7;
+  text-align: right;
+  padding: 12px 16px 0px 0px;
+}
+.toggle .switch input {
   display: none;
 }
-.edit-mode-panel .slider {
+.toggle .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -5516,7 +5532,7 @@ dd.product-price--retail {
   background-color: #cccccc;
   transition: .4s;
 }
-.edit-mode-panel .slider:before {
+.toggle .slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -5526,20 +5542,20 @@ dd.product-price--retail {
   background-color: #bde88f;
   transition: .4s;
 }
-.edit-mode-panel input:checked + .slider {
+.toggle input:checked + .slider {
   background-color: #bde88f;
 }
-.edit-mode-panel input:focus + .slider {
+.toggle input:focus + .slider {
   box-shadow: 0 0 1px #bde88f;
 }
-.edit-mode-panel input:checked + .slider:before {
+.toggle input:checked + .slider:before {
   background-color: #417506;
   transform: translateX(26px);
 }
-.edit-mode-panel .slider.round {
+.toggle .slider.round {
   border-radius: 34px;
 }
-.edit-mode-panel .slider.round:before {
+.toggle .slider.round:before {
   border-radius: 50%;
 }
 body {
@@ -5648,7 +5664,7 @@ body {
   width: 100%;
   background-color: white;
   border-top: 1px solid #dedede;
-  height: 60px;
+  height: 50px;
   padding: 0 15px 0 15px;
 }
 .btn-cloud {
