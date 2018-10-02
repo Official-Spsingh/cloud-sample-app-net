@@ -9,7 +9,7 @@ This guide describes general guidelines that most of the repositories refer to. 
 
 Everybody loves new features! You can submit a new feature request or you can code it on your own and send us a pull request. In either case, don't forget to mention what's the use case and what's the expected output.
 
-It's always a good idea to discuss the feature before you start the implementation. You can check with us whether the feature fits the vision of a given project. We may also give you some useful hints before you start coding. To start chatting, either create a new GitHub issue or contact us via the [repository's default communication channel](https://github.com/Kentico/Home#questions--answers).
+It's always a good idea to discuss the feature before starting the implementation. You can check with us whether the feature fits the vision of a given project or not. We may also give you some useful hints before you start coding. To start chatting, either create a new GitHub issue or contact us via the [repository's default communication channel](https://github.com/Kentico/Home#questions--answers).
 
 
 ## I found a bug
